@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dorsu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+      integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css"
+      integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+
+  <body class="bg-blue-100 ">
+    <nav class="sticky top-0 py-3 flex items-center flex items-center bg-blue-800 flex-wrap px-2  ">
+      <a href="#" class="mr-4 inline-flex items-center">
+        <div class="w-20">
+          <img  alt="LOGO" src="./images/LOGO.png" >
+        </div>
+      </a>
+      <button
+        class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+        data-target="#navigation"
+      >
+        <i class="material-icons">menu</i>
+      </button>
+      <div
+        class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+        id="navigation"
+      >
+        <div
+          class="text-sm flex  lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
+        >
+          <a
+            href="index.html" 
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-yellow-500 hover:text-white"
+          >
+            <span>Home</span>
+          </a>
+          
+          <div class="group inline-block"> 
+            <button
+              class="outline-none  flex items-center min-w-32"
+            >
+              <span class="px-3 py-2  font-normal flex-1 text-white  hover:bg-yellow-500 hover:text-white rounded">About</span>
+              <span>
+                <svg
+                  class="fill-current h-4 w-6  transform group-hover:-rotate-180
+                  transition duration-150 ease-in-out"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <ul
+              class="bg-blue-900 text-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+            transition duration-150 ease-in-out origin-top min-w-32"
+            >
+            <a href="history.html">
+              <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">History</li>
+            </a>
+            <a href="VMGV.html">
+              <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Vision,Mission,<br>Goals,Values</li>
+            </a>
+            <a href="admin.html">
+              <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Administration</li>
+            </a>
+            <a href="bor.html">
+              <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Board of Regents</li>
+            </a>
+            </ul>
+          </div>
+          
+          
+<div class="group inline-block">
+  <button
+  class="outline-none  flex items-center min-w-32"
+  >
+  <span class="px-3 py-2  font-normal flex-1 text-white  hover:bg-yellow-500 hover:text-white rounded">Academics</span>
+  <span>
+      <svg
+        class="fill-current h-4 w-4 transform group-hover:-rotate-180
+        transition duration-150 ease-in-out"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+        />
+      </svg>
+    </span>
+  </button>
+  <ul
+  class="bg-blue-900 text-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32"
+  >
+  
+    <li class="rounded-sm  px-3 py-1 hover:bg-yellow-500 hover:text-white rounded">
+      <button
+        class="w-full text-left flex items-center outline-none focus:outline-none"
+      >
+        <span class="px-1 py-2  font-normal flex-1 text-white  ">Academic Units</span>
+        <span class="mr-auto">
+          <svg
+            class="fill-current h-4 w-4
+            transition duration-150 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+            />
+          </svg>
+        </span>
+      </button>
+      <ul
+        class="bg-blue-900 text-white rounded-sm absolute top-0 right-0 
+  transition duration-150 ease-in-out origin-top-left
+  min-w-32
+  "
+      >
+      <a href="#">
+        <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">IALS</li>
+      </a>
+      <a href="#">
+        <li class="prounded-sm px-3 py-1 hover:bg-yellow-500">IBPA</li>
+      </a>
+      <a href="#">
+        <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">ICE</li>
+      </a>
+      <a href="#">
+        <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">IEET</li>
+      </a>
+      <a href="#">
+        <li class="prounded-sm px-3 py-1 hover:bg-yellow-500">INAHS</li>
+      </a>
+        
+        
+      </ul>
+    </li>
+
+    <ul
+    class="bg-blue-900 text-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+    transition duration-150 ease-in-out origin-top min-w-32"
+    >
+    
+      <li class="rounded-sm  px-3 py-1 hover:bg-yellow-500 hover:text-white rounded">
+        <button
+          class="w-full text-left flex items-center outline-none focus:outline-none"
+        >
+          <span class="px-1 py-2  font-normal flex-1 text-white  ">Extension Campuses</span>
+          <span class="mr-auto">
+            <svg
+              class="fill-current h-4 w-4
+              transition duration-150 ease-in-out"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </span>
+        </button>
+        <ul
+          class="bg-blue-900 text-white rounded-sm absolute top-0 right-0 
+    transition duration-150 ease-in-out origin-top-left
+    min-w-32
+    "
+        >
+        <a href="#">
+          <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">BEC</li>
+        </a>
+        <a href="#">
+          <li class="prounded-sm px-3 py-1 hover:bg-yellow-500">CEC</li>
+        </a>
+        <a href="#">
+          <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">SIEC</li>
+        </a>
+          
+        </ul>
+      </li>
+
+
+    <ul
+    class="bg-blue-900 text-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32"
+  >
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Graduate School</li>
+  </a>
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Universiity Registrar</li>
+  </a>
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Pre-School</li>
+  </a>
+  
+  </ul> 
+ </ul>
+</div>
+
+<div class="group inline-block"> 
+  <button
+    class="outline-none  flex items-center min-w-32"
+  >
+    <span class="px-3 py-2  font-normal flex-1 text-white  hover:bg-yellow-500 hover:text-white rounded">Research</span>
+    <span>
+      <svg
+        class="fill-current h-4 w-6  transform group-hover:-rotate-180
+        transition duration-150 ease-in-out"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 30 20"
+      >
+        <path
+          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+        />
+      </svg>
+    </span>
+  </button>
+  <ul
+    class="bg-blue-900 text-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32"
+  >
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Researches</li>
+  </a>
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Extension programs</li>
+  </a>
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Davao Research Journal</li>
+  </a>
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">IPTBM</li>
+  </a>
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">International Relation</li>
+  </a>
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Linkages</li>
+  </a>
+  </ul>
+</div>
+
+<div class="group inline-block">
+  <button
+  class="outline-none  flex items-center min-w-32"
+  >
+  <span class="px-3 py-2  font-normal flex-1 text-white  hover:bg-yellow-500 hover:text-white rounded">Students</span>
+  <span>
+      <svg
+        class="fill-current h-4 w-4 transform group-hover:-rotate-180
+        transition duration-150 ease-in-out"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+        />
+      </svg>
+    </span>
+  </button>
+  <ul
+  class="bg-blue-900 text-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32"
+  >
+  
+    <li class="rounded-sm  px-3 py-1 hover:bg-yellow-500 hover:text-white rounded">
+      <button
+        class="w-full text-left flex items-center outline-none focus:outline-none"
+      >
+        <span class="px-1 py-2  font-normal flex-1 text-white  ">Student Services</span>
+        <span class="mr-auto">
+          <svg
+            class="fill-current h-4 w-4
+            transition duration-150 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+            />
+          </svg>
+        </span>
+      </button>
+      <ul
+        class="bg-blue-900 text-white rounded-sm absolute top-0 right-0 
+  transition duration-150 ease-in-out origin-top-left
+  min-w-32
+  "
+      >
+      <a href="#">
+        <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">GCTC</li>
+      </a>
+      <a href="#">
+        <li class="prounded-sm px-3 py-1 hover:bg-yellow-500">OSC</li>
+      </a>
+      <a href="#">
+        <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">HSU</li>
+      </a>
+      
+        
+      </ul>
+    </li>
+
+    <a href="#">
+      <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">USC</li>
+    </a>
+
+    <a href="#">
+      <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">ULIRC</li>
+    </a>
+
+    <ul
+    class="bg-blue-900 text-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+    transition duration-150 ease-in-out origin-top min-w-32"
+    >
+    
+      <li class="rounded-sm  px-3 py-1 hover:bg-yellow-500 hover:text-white rounded">
+        <button
+          class="w-full text-left flex items-center outline-none focus:outline-none"
+        >
+          <span class="px-1 py-2  font-normal flex-1 text-white  ">Student Publication</span>
+          <span class="mr-auto">
+            <svg
+              class="fill-current h-4 w-4
+              transition duration-150 ease-in-out"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </span>
+        </button>
+        <ul
+          class="bg-blue-900 text-white rounded-sm absolute top-0 right-0 
+    transition duration-150 ease-in-out origin-top-left
+    min-w-32
+    "
+        >
+        <a href="#">
+          <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Catalyst</li>
+        </a>
+        <a href="#">
+          <li class="prounded-sm px-3 py-1 hover:bg-yellow-500">Sidlakan</li>
+        </a>
+        <a href="#">
+          <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Dagmay</li>
+        </a>
+          
+        </ul>
+      </li>
+
+
+    <ul
+    class="bg-blue-900 text-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32"
+  >
+ 
+
+  </ul> 
+ </ul>
+</div>
+
+<div class="group inline-block"> 
+  <button
+    class="outline-none  flex items-center min-w-32"
+  >
+    <span class="px-3 py-2  font-normal flex-1 text-white  hover:bg-yellow-500 hover:text-white rounded">Resource</span>
+    <span>
+      <svg
+        class="fill-current h-4 w-6  transform group-hover:-rotate-180
+        transition duration-150 ease-in-out"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+        />
+      </svg>
+    </span>
+  </button>
+  <ul
+    class="bg-blue-900 text-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32"
+  >
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Alumni Tracer</li>
+  </a>
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Grades Portal</li>
+  </a>
+  
+  </ul>
+</div>
+
+<div class="group inline-block">
+  <button
+  class="outline-none  flex items-center min-w-32"
+  >
+  <span class="px-3 py-2  font-normal flex-1 text-white  hover:bg-yellow-500 hover:text-white rounded">Students</span>
+  <span>
+      <svg
+        class="fill-current h-4 w-4 transform group-hover:-rotate-180
+        transition duration-150 ease-in-out"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+        />
+      </svg>
+    </span>
+  </button>
+  <ul
+  class="bg-blue-900 text-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32"
+  >
+  
+    <li class="rounded-sm  px-3 py-1 hover:bg-yellow-500 hover:text-white rounded">
+      <button
+        class="w-full text-left flex items-center outline-none focus:outline-none"
+      >
+        <span class="px-1 py-2  font-normal flex-1 text-white  ">Student Services</span>
+        <span class="mr-auto">
+          <svg
+            class="fill-current h-4 w-4
+            transition duration-150 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+            />
+          </svg>
+        </span>
+      </button>
+      <ul
+        class="bg-blue-900 text-white rounded-sm absolute top-0 right-0 
+  transition duration-150 ease-in-out origin-top-left
+  min-w-32
+  "
+      >
+      <a href="#">
+        <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">GCTC</li>
+      </a>
+      <a href="#">
+        <li class="prounded-sm px-3 py-1 hover:bg-yellow-500">OSC</li>
+      </a>
+      <a href="#">
+        <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">HSU</li>
+      </a>
+      
+        
+      </ul>
+    </li>
+
+    <a href="#">
+      <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">USC</li>
+    </a>
+  </ul> 
+ </ul>
+</div>
+
+<div class="group inline-block"> 
+  <button
+    class="outline-none  flex items-center min-w-32"
+  >
+    <span class="px-3 py-2  font-normal flex-1 text-white  hover:bg-yellow-500 hover:text-white rounded">Grade Inquiry</span>
+    <span>
+      <svg
+        class="fill-current h-4 w-6  transform group-hover:-rotate-180
+        transition duration-150 ease-in-out"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+        />
+      </svg>
+    </span>
+  </button>
+  <ul
+    class="bg-blue-900 text-white rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32"
+  >
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Grade Inquiry 1</li>
+  </a>
+  <a href="#">
+    <li class="rounded-sm px-3 py-1 hover:bg-yellow-500">Grade Inquiry 2</li>
+  </a>
+   
+  </ul>
+</div>
+
+<style>
+ 
+  li>ul                 { transform: translatex(100%) scale(0) }
+  li:hover>ul           { transform: translatex(101%) scale(1) }
+  li > button svg       { transform: rotate(-90deg) }
+  li:hover > button svg { transform: rotate(-270deg) }
+
+  
+  .group:hover .group-hover\:scale-100 { transform: scale(1) }
+  .group:hover .group-hover\:-rotate-180 { transform: rotate(180deg) }
+  .scale-0 { transform: scale(0) }
+  .min-w-32 { min-width: 8rem }
+</style>
+
+
+        </div>
+      </div>
+    </nav>
+</body>
+
+<div class="container px-2 py-24 mx-auto bg-white  pt-8 py-30 ">
+    <div class="flex flex-col text-center w-full mb-auto">
+      <h1 class="text-2xl pt-10 font-bold font-bold title-font mb-4 sm:text-4xl text-blue-700">ADMINISTRATION</h1>
+    
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-2 items-center justify-center flex-col">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="images/dorsu/dorsunews/SIR_ROY.jpg">
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-2xl text-3xl mb-4 font-medium text-gray-900">DR. ROY G. PONCE</h1>
+            <p class="mb-8 leading-relaxed">SUC PRESIDENT III</p>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+ </div>
+ 
+
+    
+  </div>
+  <div class="bg-blue-100 p-5">
+
+    <footer class="text-gray-600 body-font  ml-20 py-5">
+        <div class="container   py-2 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img  class="" alt="pts" src="./images/dorsu/LOGO.png" >
+            </a>
+
+            <h1 class="mt-2  text-sm text-gray-700">GUANG-GUANG, <br>DAHICAN CITY OF MATI, <br>8200 DAVAO ORIENTAL,PHILIPPINES</h1>
+        </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center mr-4">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-2 ml-20 mr-2">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest px-5 text-center text-sm mb-3">CAMPUSES</h2>
+              <nav class="list-none mb-100">
+                <li class="pt-2">
+                  <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">BANAYBANAY CAMPUS</a>
+                </li>
+                <li class="pt-2">
+                  <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">CATEEL CAMPUS</a>
+                </li>
+                <li class="pt-2">
+                  <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">SAN ISIDRO CAMPUS</a>
+                </li>
+                <li class="pt-2">
+                  <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">BAGANGA CAMPUS</a>
+                </li>
+              </nav>
+            </div>
+            
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+                <h2 class="title-font font-medium text-gray-900 tracking-widest px-5 text-center text-sm mb-3">ARCHIVES</h2>
+                <nav class="list-none mb-100">
+                  <li class="pt-2">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500 hover:text-yellow-500">September 2022</a>
+                  </li>
+                  <li class="pt-2">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">August 2022</a>
+                  </li>
+                  <li class="pt-2">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">July 2022</a>
+                  </li>
+                  <li class="pt-2">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">June 2022</a>
+                  </li>
+                  <li class="pt-2">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">May 2022</a>
+                  </li>
+                  <li class="pt-2">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">April 2022</a>
+                  </li>
+                  
+                </nav>
+              </div>
+
+            
+              <nav class="list-none mb-100 pt-8">
+                <li class="pt-2">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">March 2022</a>
+                  </li>
+                <li class="pt-2">
+                  <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">February 2022</a>
+                </li>
+                <li class="pt-2">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">January 2022</a>
+                  </li>
+                  <li class="pt-2">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">November 2022</a>
+                  </li>
+                  <li class="pt-2">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 underline hover:text-yellow-500">October 2022</a>
+                  </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container  py-4 px-5 flex flex-wrap flex-col sm:flex-row text-center">
+            <p class="text-gray-500 text-sm text-center sm:text-left ">© 2022 ELDA LIMIMBAY —
+              <a href="https://facebook.com/limimbayelda" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@limimbayelda</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+   </div>
+</body>
+</html>
